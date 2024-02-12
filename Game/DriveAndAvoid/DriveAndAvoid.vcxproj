@@ -148,10 +148,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object\Barrier.h" />
+    <ClInclude Include="Object\Character.h" />
     <ClInclude Include="Object\Enemy.h" />
     <ClInclude Include="Object\Item.h" />
+    <ClInclude Include="Object\Kiba.h" />
+    <ClInclude Include="Object\Normal.h" />
     <ClInclude Include="Object\Player.h" />
+    <ClInclude Include="Object\Range.h" />
     <ClInclude Include="Object\RankingData.h" />
+    <ClInclude Include="Object\Tank.h" />
     <ClInclude Include="Scene\GameMainScene.h" />
     <ClInclude Include="Scene\HelpScene.h" />
     <ClInclude Include="Scene\RankingDispScene.h" />
