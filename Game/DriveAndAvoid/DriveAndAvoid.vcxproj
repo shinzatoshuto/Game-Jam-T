@@ -133,11 +133,15 @@
   <ItemGroup>
     <ClCompile Include="AppMain.cpp" />
     <ClCompile Include="Object\Barrier.cpp" />
+    <ClCompile Include="Object\Character.cpp" />
     <ClCompile Include="Object\Enemy.cpp" />
     <ClCompile Include="Object\Item.cpp" />
+    <ClCompile Include="Object\Kiba.cpp" />
+    <ClCompile Include="Object\Nomal.cpp" />
     <ClCompile Include="Object\Player.cpp" />
+    <ClCompile Include="Object\Range.cpp" />
     <ClCompile Include="Object\RankingData.cpp" />
-    <ClCompile Include="Object\Player_T.cpp" />
+    <ClCompile Include="Object\Tank.cpp" />
     <ClCompile Include="Scene\GameMainScene.cpp" />
     <ClCompile Include="Scene\HelpScene.cpp" />
     <ClCompile Include="Scene\RankingDispScene.cpp" />
@@ -149,11 +153,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object\Barrier.h" />
+    <ClInclude Include="Object\Character.h" />
     <ClInclude Include="Object\Enemy.h" />
     <ClInclude Include="Object\Item.h" />
+    <ClInclude Include="Object\Kiba.h" />
+    <ClInclude Include="Object\Normal.h" />
     <ClInclude Include="Object\Player.h" />
+    <ClInclude Include="Object\Range.h" />
     <ClInclude Include="Object\RankingData.h" />
-    <ClInclude Include="Object\Player_T.h" />
+    <ClInclude Include="Object\Tank.h" />
     <ClInclude Include="Scene\GameMainScene.h" />
     <ClInclude Include="Scene\HelpScene.h" />
     <ClInclude Include="Scene\RankingDispScene.h" />

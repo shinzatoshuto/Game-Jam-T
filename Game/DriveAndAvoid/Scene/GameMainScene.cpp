@@ -3,6 +3,7 @@
 #include"../Utility/InputControl.h"
 #include"DxLib.h"
 #include<math.h>
+#include"../Object/Normal.h"
 
 
 GameMainScene::GameMainScene() : high_score(0), back_ground(NULL), barrier_image(NULL), image(NULL),item_image(NULL),
@@ -22,10 +23,14 @@ GameMainScene::~GameMainScene()
 {
 }
 
+int flg;
 
 //初期化処理
 void GameMainScene::Initialize()
 {
+
+	flg = 0;
+
 	//高得点値を読み込む
 	ReadHighScore();
 
@@ -75,6 +80,9 @@ void GameMainScene::Initialize()
 	player = new Player;
 	enemy = new Enemy* [10];
 	item = new Item(item_image);
+	
+	//chara = new Character;
+
 
 	//オブジェクトの初期化
 	player->Initialize();
@@ -92,11 +100,21 @@ void GameMainScene::Initialize()
 //更新処理
 eSceneType GameMainScene::Update()
 {
+
 	//BGM再生
 	PlaySoundMem(sound, DX_PLAYTYPE_LOOP, FALSE);
 
 	//プレイヤーの更新
 	player->Update();
+
+	/*
+	if (flg == 0)
+	{
+		chara = new Nomal;
+		chara->Initialize();
+		flg = 1;
+	}
+	*/
 
 	//移動距離の更新
 	mileage += (int)player->GetSpeed() + 2;
@@ -117,7 +135,7 @@ eSceneType GameMainScene::Update()
 	}
 
 	//アイテム生成
-	if (mileage / 20 % (GetRand(250) + 250) == 0)
+	if (mileage / 20 % (GetRand(250) + 10) == 0)
 	{
 		for (int i = 0; i < 10; i++)
 		{
@@ -224,6 +242,10 @@ void GameMainScene::Draw() const
 	//背景画像の描画
 	DrawGraph(0, mileage % 480 - 480, back_ground, TRUE);
 	DrawGraph(0, mileage % 480, back_ground, TRUE);
+
+	
+	//chara->Draw();
+
 
 	//敵の描画
 	for (int i = 0; i < 10; i++)

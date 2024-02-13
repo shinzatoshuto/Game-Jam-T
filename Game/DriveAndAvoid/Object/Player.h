@@ -3,6 +3,9 @@
 #include"../Utility/Vector2D.h"
 #include"Barrier.h"
 
+#include"../Object/Character.h"
+#include"../Object/Normal.h"
+
 class Player
 {
 private:
