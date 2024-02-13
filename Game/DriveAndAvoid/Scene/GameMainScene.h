@@ -4,6 +4,7 @@
 #include"../Object/Player.h"
 #include"../Object/Enemy.h"
 #include"../Object/Item.h"
+#include"../Object/Character.h"
 
 
 class GameMainScene : public SceneBase
@@ -18,6 +19,9 @@ private:
 	int enemy_count[3];	 //通り過ぎた敵カウント
 	Player* player;		 //プレイヤー
 	Enemy** enemy;		 //敵
+
+	Character* chara;
+
 
 	Item* item;		//アイテム
 	int item_image;	//アイテム画像
@@ -48,5 +52,9 @@ private:
 	//当たり判定
 	bool IsHitCheck(Player* p, Enemy* e);
 	bool IsHitCheck(Player* p, Item* i);
+
+
+
+
 };
 

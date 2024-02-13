@@ -11,7 +11,6 @@ Player::Player() : is_active(false), image(NULL), location(0.0f), box_size(0.0f)
 barrier(nullptr)
 {
 
-
 }
 
 Player::~Player()
@@ -139,7 +138,6 @@ void Player::Update()
 //描画処理
 void Player::Draw()
 {
-
 	//プレイヤー画像の描画
 	DrawRotaGraphF(location.x, location.y, 1.0, angle, image, TRUE);
 
@@ -148,7 +146,6 @@ void Player::Draw()
 	{
 		barrier->Draw(this->location);
 	}
-
 }
 
 //終了時処理

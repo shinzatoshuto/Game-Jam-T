@@ -133,10 +133,15 @@
   <ItemGroup>
     <ClCompile Include="AppMain.cpp" />
     <ClCompile Include="Object\Barrier.cpp" />
+    <ClCompile Include="Object\Character.cpp" />
     <ClCompile Include="Object\Enemy.cpp" />
     <ClCompile Include="Object\Item.cpp" />
+    <ClCompile Include="Object\Kiba.cpp" />
+    <ClCompile Include="Object\Nomal.cpp" />
     <ClCompile Include="Object\Player.cpp" />
+    <ClCompile Include="Object\Range.cpp" />
     <ClCompile Include="Object\RankingData.cpp" />
+    <ClCompile Include="Object\Tank.cpp" />
     <ClCompile Include="Scene\GameMainScene.cpp" />
     <ClCompile Include="Scene\HelpScene.cpp" />
     <ClCompile Include="Scene\RankingDispScene.cpp" />

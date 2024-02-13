@@ -10,11 +10,12 @@
 //キャラクターの種類
 enum CharacterType
 {
-	Nomal,	//ノーマル
-	Tank,	//タンク
-	Range,	//範囲攻撃
-	Kiba	//騎馬
+	Nomal_type,	//ノーマル
+	Tank_type,	//タンク
+	Range_type,	//範囲攻撃
+	Kiba_type	//騎馬
 };
+
 
 //キャラクターの基底クラス
 class Character
