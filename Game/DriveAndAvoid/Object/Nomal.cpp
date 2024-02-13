@@ -32,5 +32,5 @@ void Nomal::Update()
 
 void Nomal::Draw()
 {
-	DrawRotaGraph(location.x, location.y, 0.5, 0.0, graphic, TRUE);
+	DrawRotaGraph(location.x, location.y, 0.3, 0.0, graphic, TRUE);
 }
