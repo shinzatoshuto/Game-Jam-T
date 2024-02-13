@@ -1,5 +1,8 @@
 #pragma once
 #include "../Utility/Vector2D.h"
+#include "Character.h"
+
+#define _MAX_CHARACTOR_ 10
 
 class Player_T
 {
@@ -9,6 +12,10 @@ private:
 	int Cursor;     //カーソル
 	int Level;      //Levelの管理
 	int ExPoint;    //経験値の管理
+
+	Character** chara;
+
+	int charaCount;
 
 private:
 	static float stick2[2];

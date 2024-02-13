@@ -5,6 +5,7 @@
 #include"../Object/Enemy.h"
 #include"../Object/Item.h"
 #include"../Object/Character.h"
+#include"../Object/Player_T.h"
 
 
 class GameMainScene : public SceneBase
@@ -20,6 +21,7 @@ private:
 	Player* player;		 //ƒvƒŒƒCƒ„[
 	Enemy** enemy;		 //“G
 
+	Player_T* pt;
 	Character* chara;
 
 

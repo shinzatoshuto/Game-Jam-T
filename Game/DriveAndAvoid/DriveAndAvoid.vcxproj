@@ -136,6 +136,7 @@
     <ClCompile Include="Object\Character.cpp" />
     <ClCompile Include="Object\Enemy.cpp" />
     <ClCompile Include="Object\Item.cpp" />
+    <ClCompile Include="Object\Player_T.cpp" />
     <ClCompile Include="Object\Kiba.cpp" />
     <ClCompile Include="Object\Nomal.cpp" />
     <ClCompile Include="Object\Player.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Object\Character.h" />
     <ClInclude Include="Object\Enemy.h" />
     <ClInclude Include="Object\Item.h" />
+    <ClCompile Include="Object\Player_T.h" />
     <ClInclude Include="Object\Kiba.h" />
     <ClInclude Include="Object\Normal.h" />
     <ClInclude Include="Object\Player.h" />

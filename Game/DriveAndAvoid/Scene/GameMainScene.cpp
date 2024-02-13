@@ -81,6 +81,7 @@ void GameMainScene::Initialize()
 	enemy = new Enemy* [10];
 	item = new Item(item_image);
 	
+	pt = new Player_T;
 	//chara = new Character;
 
 
@@ -105,7 +106,8 @@ eSceneType GameMainScene::Update()
 	PlaySoundMem(sound, DX_PLAYTYPE_LOOP, FALSE);
 
 	//プレイヤーの更新
-	player->Update();
+	//player->Update();
+	pt->Update();
 
 	/*
 	if (flg == 0)
@@ -245,7 +247,7 @@ void GameMainScene::Draw() const
 
 	
 	//chara->Draw();
-
+	pt->Draw();
 
 	//敵の描画
 	for (int i = 0; i < 10; i++)
